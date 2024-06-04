@@ -1,0 +1,36 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.tasksWrapper{
+    width: 100%;
+}
+
+@media (max-width: 1180px){
+    .wrapper{
+        max-width: 55rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 930px){
+    .wrapper{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+}
+
+/* @media (max-width: 1180px){
+    .wrapper{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+} */

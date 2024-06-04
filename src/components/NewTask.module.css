@@ -1,0 +1,74 @@
+.taskContainer{
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input{
+    outline: 0;
+    border: 0;
+    background: var(--gray-500);
+}
+
+input{
+    outline: 0;
+    border: 1px solid var(--gray-700);
+    background: var(--gray-500);
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 5px;    
+    color: var(--gray-100);
+    transition: 0.5s border;
+}
+
+input:focus{
+    border: 1px solid var(--purple-500);
+    box-shadow: none;
+}
+
+button{
+    background: var(--blue-500);
+    transition: background-color 0.1s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--gray-100);
+
+    cursor: pointer;
+
+    outline: 0;
+    border: 0;
+    
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button svg{
+    margin-top: 0.1rem;
+    margin-left: 2px;
+    align-items: center;
+}
+
+button:hover:not(:disabled){
+    background-color: var(--blue-300);
+}
+
+button:disabled{
+    cursor: not-allowed;
+    filter: grayscale(0.6)
+}
+
+@media (max-width: 930px){
+    .taskContainer{
+        flex-direction: column;
+        gap: 12px;
+    }    
+
+    input{
+        width: 100%;
+    }
+}
